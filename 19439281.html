@@ -3,8 +3,8 @@
     <title>Encrypted Text</title>
     <script>
       var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
-      document.body.onload = function() {
-        var h = document.getElementById("heading");
+      function rainbow(element) {
+        var h = element;
         var str = h.innerHTML.split("");
         for(var i = 0; i < str.length; i++) {
           str[i] = "<span style='color: " + colors[i%colors.length] + "'>" + str[i] + "</span>"
@@ -14,7 +14,7 @@
     </script>
   </head>
   <body>
-    <h1 id="heading" style="font-family: Lucida Console">Encrypted Text</h1>
+    <h1 id="heading" style="font-family: Lucida Console" onload="rainbow(this)">Encrypted Text</h1>
     <hr>
     <h2>
       Hint:
