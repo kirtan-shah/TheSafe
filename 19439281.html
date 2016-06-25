@@ -7,7 +7,7 @@
         var h = document.getElementById("heading");
         var str = h.innerHTML.split("");
         for(var i = 0; i < str.length; i++) {
-          str[i] = "<span style='color: " + colors[i%colors.length] + ">" + str[i] + "</span>"
+          str[i] = "<span style='color: " + colors[i%colors.length] + "'>" + str[i] + "</span>"
         }
         h.innerHTML = str.join("");
       }
