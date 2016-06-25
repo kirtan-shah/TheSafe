@@ -1,6 +1,14 @@
 <html>
   <head>
     <title>Encrypted Text</title>
+  </head>
+  <body>
+    <h1 id="heading" style="font-family: Lucida Console">Encrypted Text</h1>
+    <hr>
+    <h2>
+      Hint:
+    </h2>
+    <img src="http://vignette2.wikia.nocookie.net/spartacus/images/5/55/Juliuscaesar.jpg/revision/latest?cb=20130606052819"></img>
     <script>
       var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
       function rainbow(element) {
@@ -11,14 +19,7 @@
         }
         h.innerHTML = str.join("");
       }
+      rainbow(document.getElementById("heading"));
     </script>
-  </head>
-  <body>
-    <h1 id="heading" style="font-family: Lucida Console" onload="rainbow(this)">Encrypted Text</h1>
-    <hr>
-    <h2>
-      Hint:
-    </h2>
-    <img src="http://vignette2.wikia.nocookie.net/spartacus/images/5/55/Juliuscaesar.jpg/revision/latest?cb=20130606052819"></img>
   </body>
 </html>
