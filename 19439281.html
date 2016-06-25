@@ -1,9 +1,20 @@
 <html>
   <head>
     <title>Encrypted Text</title>
+    <script>
+      var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+      document.onload = function(){
+        var h = document.getElementById("heading");
+        var str = h.innerHTML.split("");
+        for(var i = 0; i < str.length; i++) {
+          str[i] = "<span style='color: " + colors[i%colors.length] + ">" + str[i] + "</span>"
+        }
+        h.innerHTML = str.join("");
+      }
+    </script>
   </head>
   <body>
-    <h1 style="font-family: Lucida Console">Encrypted Text</h1>
+    <h1 id="heading" style="font-family: Lucida Console">Encrypted Text</h1>
     <hr>
     <h2>
       Who's this guy?
